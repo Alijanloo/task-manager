@@ -1,0 +1,47 @@
+{
+  "name": "task-manager",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "set NODE_ENV=production && node prod-server/index.js",
+    "serve": "vue-cli-service serve",
+    "build": "set NODE_ENV=production && babel dev-server --out-dir prod-server && vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "babel": "babel dev-server --out-dir prod-server --watch",
+    "dev": "concurrently \"npm run serve\" \"npm run babel\" \"npm run nodemon\" ",
+    "nodemon": "set NODE_ENV=development && nodemon prod-server/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^5.1.0",
+    "bootstrap-vue": "^2.21.2",
+    "concurrently": "^6.2.1",
+    "core-js": "^3.6.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.4",
+    "popper.js": "^1.16.1",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.4",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "cors": "^2.8.5",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "morgan": "^1.10.0"
+  }
+}

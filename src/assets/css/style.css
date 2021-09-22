@@ -1,0 +1,100 @@
+html {
+    font-size: 12px;
+}
+
+.navbar-brand img {
+    max-height: 20px;
+}
+
+.navbar {
+    height: 6rem;
+    text-transform: uppercase;
+}
+
+.custom-bg-dark {
+    background: #34495e;
+}
+
+.app-container {
+    background: #2c3e50;
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    bottom: 6rem;
+    width: 100%;
+    padding: 1rem;
+    overflow: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        background-color: #34495e;
+        padding-left: 1rem;
+    }
+    .modal-small {
+        max-width: 300px;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer span {
+    margin-right: 1rem;
+}
+
+.custom-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.custom-home div {
+    max-height: 100%;
+    overflow: auto;
+}
+
+form.custom-form {
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    /* font-size: 14px; */
+}
+
+.is-late {
+    color: #dc3545;
+}
+
+.modal-backdrop {
+    /* bug fix - no overlay */    
+    display: none;    
+}
+
+nav a {
+    cursor: pointer;
+}
